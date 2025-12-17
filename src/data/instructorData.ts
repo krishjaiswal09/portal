@@ -1,0 +1,271 @@
+import { Instructor, InstructorVacation } from "@/types/instructor"
+
+export const countries = [
+  'India',
+  'United States',
+  'United Kingdom',
+  'Canada',
+  'Australia',
+  'Germany',
+  'France',
+  'Japan',
+  'Brazil',
+  'Singapore'
+]
+
+export const languages = [
+  'English',
+  'Hindi',
+  'Tamil',
+  'Telugu',
+  'Bengali',
+  'Marathi',
+  'Gujarati',
+  'Kannada',
+  'Malayalam',
+  'Punjabi',
+  'Spanish',
+  'French',
+  'German',
+  'Japanese',
+  'Mandarin'
+]
+
+export const artForms = [
+  'Bharatanatyam',
+  'Kathak',
+  'Odissi',
+  'Kuchipudi',
+  'Manipuri',
+  'Mohiniyattam',
+  'Kathakali',
+  'Folk Dance',
+  'Contemporary Dance',
+  'Ballet',
+  'Jazz Dance',
+  'Hip Hop',
+  'Bollywood Dance',
+  'Classical Music',
+  'Carnatic Music',
+  'Hindustani Music',
+  'Western Music',
+  'Guitar',
+  'Piano',
+  'Violin',
+  'Flute',
+  'Tabla',
+  'Mridangam'
+]
+
+export const certifications = [
+  'Certified Dance Instructor',
+  'Bachelor of Fine Arts',
+  'Master of Fine Arts',
+  'Trinity College London',
+  'Royal Academy of Dance',
+  'Bharata Natyam Certification',
+  'Kathak Certification',
+  'Music Teacher Certification',
+  'Yoga Alliance Certification'
+]
+
+export const timezones = [
+  'Asia/Kolkata',
+  'America/New_York',
+  'America/Los_Angeles',
+  'Europe/London',
+  'Australia/Sydney',
+  'Asia/Tokyo',
+  'Europe/Berlin',
+  'America/Toronto',
+  'Asia/Singapore'
+]
+
+export const mockInstructors: Instructor[] = [
+  {
+    id: 'instructor-1',
+    fullName: 'Priya Sharma',
+    email: 'priya.sharma@example.com',
+    phone: '+91 9876543210',
+    dateOfBirth: '1985-03-15',
+    gender: 'Female',
+    country: 'India',
+    state: 'Karnataka',
+    city: 'Bangalore',
+    timezone: 'Asia/Kolkata',
+    bio: 'Experienced Bharatanatyam instructor with over 15 years of teaching experience.',
+    languagesKnown: ['English', 'Hindi', 'Tamil', 'Kannada'],
+    artForms: ['Bharatanatyam', 'Folk Dance'],
+    certifications: ['Certified Dance Instructor', 'Bachelor of Fine Arts'],
+    comfortableAgeGroups: ['9 yrs and younger', '10 yrs to 20 yrs', '21 yrs to 35 yrs'],
+    status: 'Active',
+    username: 'priya.sharma',
+    rating: 4.8,
+    totalStudents: 45,
+    totalClasses: 320,
+    canAssignDemos: true,
+    canTransferStudents: true,
+    kidFriendly: true,
+    createdAt: '2023-01-15T00:00:00Z',
+    updatedAt: '2024-01-15T00:00:00Z'
+  },
+  {
+    id: 'instructor-2',
+    fullName: 'Rajesh Kumar',
+    email: 'rajesh.kumar@example.com',
+    phone: '+91 9876543211',
+    dateOfBirth: '1980-07-22',
+    gender: 'Male',
+    country: 'India',
+    state: 'Tamil Nadu',
+    city: 'Chennai',
+    timezone: 'Asia/Kolkata',
+    bio: 'Classical music instructor specializing in Carnatic music and violin.',
+    languagesKnown: ['English', 'Tamil', 'Hindi'],
+    artForms: ['Carnatic Music', 'Violin'],
+    certifications: ['Music Teacher Certification', 'Master of Fine Arts'],
+    comfortableAgeGroups: ['10 yrs to 20 yrs', '21 yrs to 35 yrs', '36 yrs and older'],
+    status: 'Active',
+    username: 'rajesh.kumar',
+    rating: 4.9,
+    totalStudents: 32,
+    totalClasses: 280,
+    canAssignDemos: false,
+    canTransferStudents: true,
+    kidFriendly: false,
+    createdAt: '2023-02-20T00:00:00Z',
+    updatedAt: '2024-01-10T00:00:00Z'
+  },
+  {
+    id: 'instructor-3',
+    fullName: 'Anjali Patel',
+    email: 'anjali.patel@example.com',
+    phone: '+91 9876543212',
+    dateOfBirth: '1988-11-08',
+    gender: 'Female',
+    country: 'India',
+    state: 'Gujarat',
+    city: 'Ahmedabad',
+    timezone: 'Asia/Kolkata',
+    bio: 'Contemporary dance and ballet instructor with international training.',
+    languagesKnown: ['English', 'Hindi', 'Gujarati'],
+    artForms: ['Contemporary Dance', 'Ballet', 'Jazz Dance'],
+    certifications: ['Royal Academy of Dance', 'Bachelor of Fine Arts'],
+    comfortableAgeGroups: ['9 yrs and younger', '10 yrs to 20 yrs'],
+    status: 'Active',
+    username: 'anjali.patel',
+    rating: 4.7,
+    totalStudents: 38,
+    totalClasses: 250,
+    canAssignDemos: true,
+    canTransferStudents: true,
+    kidFriendly: true,
+    createdAt: '2023-03-10T00:00:00Z',
+    updatedAt: '2024-01-12T00:00:00Z'
+  },
+  {
+    id: 'instructor-4',
+    fullName: 'Kavya Reddy',
+    email: 'kavya.reddy@example.com',
+    phone: '+91 9876543213',
+    dateOfBirth: '1992-06-25',
+    gender: 'Female',
+    country: 'India',
+    state: 'Telangana',
+    city: 'Hyderabad',
+    timezone: 'Asia/Kolkata',
+    bio: 'Multi-talented instructor specializing in Piano and Western music.',
+    languagesKnown: ['English', 'Telugu', 'Hindi'],
+    artForms: ['Piano', 'Western Music', 'Guitar'],
+    certifications: ['Trinity College London', 'Music Teacher Certification'],
+    comfortableAgeGroups: ['10 yrs to 20 yrs', '21 yrs to 35 yrs', '36 yrs and older'],
+    status: 'Inactive',
+    username: 'kavya.reddy',
+    rating: 4.6,
+    totalStudents: 28,
+    totalClasses: 180,
+    canAssignDemos: false,
+    canTransferStudents: false,
+    kidFriendly: false,
+    createdAt: '2023-04-05T00:00:00Z',
+    updatedAt: '2024-01-08T00:00:00Z'
+  },
+  {
+    id: 'instructor-5',
+    fullName: 'Meera Joshi',
+    email: 'meera.joshi@example.com',
+    phone: '+91 9876543214',
+    dateOfBirth: '1986-09-12',
+    gender: 'Female',
+    country: 'India',
+    state: 'Maharashtra',
+    city: 'Mumbai',
+    timezone: 'Asia/Kolkata',
+    bio: 'Traditional Indian classical music and tabla instructor.',
+    languagesKnown: ['English', 'Hindi', 'Marathi'],
+    artForms: ['Hindustani Music', 'Tabla', 'Classical Music'],
+    certifications: ['Master of Fine Arts', 'Music Teacher Certification'],
+    comfortableAgeGroups: ['9 yrs and younger', '10 yrs to 20 yrs', '21 yrs to 35 yrs', '36 yrs and older'],
+    status: 'Active',
+    username: 'meera.joshi',
+    rating: 4.9,
+    totalStudents: 52,
+    totalClasses: 420,
+    canAssignDemos: true,
+    canTransferStudents: true,
+    kidFriendly: true,
+    createdAt: '2023-01-20T00:00:00Z',
+    updatedAt: '2024-01-14T00:00:00Z'
+  }
+]
+
+export const mockVacations: InstructorVacation[] = [
+  {
+    id: 'vacation-1',
+    instructorId: 'instructor-1',
+    instructorName: 'Priya Sharma',
+    startDate: '2024-02-15',
+    endDate: '2024-02-20',
+    reason: 'Family vacation',
+    status: 'Approved',
+    impactedClasses: [
+      {
+        id: 'class-1',
+        title: 'Bharatanatyam Basics',
+        studentGroup: 'Group A (5 students)',
+        studentName: 'Aadhya Patel, Ravi Kumar, Sita Sharma, Maya Joshi, Dev Gupta',
+        dateTime: '2024-02-16T10:30:00',
+        duration: 60
+      },
+      {
+        id: 'class-2',
+        title: 'Advanced Bharatanatyam',
+        studentGroup: 'Group B (3 students)',
+        studentName: 'Ishita Reddy, Arjun Singh, Kavya Nair',
+        dateTime: '2024-02-18T14:00:00',
+        duration: 90
+      }
+    ],
+    createdAt: '2024-01-20'
+  },
+  {
+    id: 'vacation-2',
+    instructorId: 'instructor-2',
+    instructorName: 'Rajesh Kumar',
+    startDate: '2024-03-01',
+    endDate: '2024-03-05',
+    reason: 'Medical leave',
+    status: 'Pending',
+    impactedClasses: [
+      {
+        id: 'class-3',
+        title: 'Carnatic Music - Beginner',
+        studentGroup: 'Individual - John Doe',
+        studentName: 'John Doe',
+        dateTime: '2024-03-02T16:00:00',
+        duration: 60
+      }
+    ],
+    createdAt: '2024-02-15'
+  }
+]
